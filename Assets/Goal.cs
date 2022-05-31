@@ -6,6 +6,7 @@ public class Goal : MonoBehaviour
 {
     public GameObject clearText;
     public GameObject nextButton;
+    public GameObject nextButton2;
     public AudioSource audioSource;
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +14,7 @@ public class Goal : MonoBehaviour
 
         clearText.SetActive(true);
         nextButton.SetActive(true);
+        nextButton2.SetActive(true);
         audioSource.Play();
     }
 }
